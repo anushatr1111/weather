@@ -9,9 +9,23 @@
 <body>
   <div class="container">
     <h1>Weather App</h1>
-    <input type="text" id="cityInput" placeholder="Enter city">
-    <button onclick="getWeather(document.getElementById('cityInput').value)">Get Weather</button>
+    
+    <div class="search">
+      <input type="text" id="cityInput" placeholder="Enter city">
+      <button onclick="getWeather(document.getElementById('cityInput').value)">Get Weather</button>
+    </div>
+    
     <div id="output"></div>
+
+    <div id="forecast"></div>
+    <div id="weatherAlerts"></div>
+
+    <div id="widget">
+      <h2>Weather Widget</h2>
+      <p id="widgetTemperature"></p>
+      <p id="widgetCondition"></p>
+    </div>
+    
   </div>
 
   <script src="script.js"></script>
